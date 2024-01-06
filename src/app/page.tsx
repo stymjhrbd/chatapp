@@ -1,8 +1,9 @@
 
 
 export default function Home() {
-  return <div className=''>
-    <h1>Hello</h1>
+  return (<div className="max-w-wl mx-auto border rounded-lg p-10 mt-32">
 
   </div>
+
+  )
 }

@@ -1,28 +1,25 @@
 // Navbar.jsx
 import React from 'react';
-import Logo from '@/public/Logo'
+import { Navlogin } from './buttons';
+// import PersonIcon from '@mui/icons-material/Person';
+// import ChatIcon from '@mui/icons-material/Chat';
+// import HomeIcon from '@mui/icons-material/Home';
+// import SettingsIcon from '@mui/icons-material/Settings';
+
 
 const Navbar = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', padding: '30px', backgroundColor: '#ffffff', color: '#0d0c22' }}>
-      
-      <div style={{ display: 'flex', gap: '20px', paddingTop: '5px', paddingLeft: '14px', width:'560px' }}>
-        <a href="/" style={{ color: '#0d0c22', textDecoration: 'none' , fontSize: '14px'}}>Find Talent</a>
-        <a href="/about" style={{ color: '#0d0c22', textDecoration: 'none' , fontSize: '14px'}}>Inspiration</a>
-        <a href="/contact" style={{ color: '#0d0c22', textDecoration: 'none' ,  fontSize: '14px'}}>Learn Design</a>
-        <a href="/design" style={{color : '#0d0c22,', textDecoration:'none' ,  fontSize: '14px'}}> Jobs</a>
-        <a href="/design" style={{color : '#0d0c22,', textDecoration:'none' ,  fontSize: '14px'}}> Go Pro</a>
-      </div>
-
-      <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Your Logo</div>
-
-      <div style={{fontSize: '14px', paddingLeft:'10px', display: 'flex', gap: '20px'}}>
-        
-        <a href="/" style={{color: '#0d0c22', textDecoration: 'none' , fontSize: '14px'}}>Log In</a>
-        <a href="/" style={{color: '#0d0c22', textDecoration: 'none' , fontSize: '14px'}}>Sign Up</a>
-      </div>
-      
+    // <div className='flex flex-col p-30 pl-10 bg-slate-500 justify-items-start'>
+    //   <div className='HomeIcon p-3'><HomeIcon /></div>
+    //   <div className='ChatIcon p-3'><ChatIcon /></div>
+    //   <div className='personIcon p-3'><PersonIcon /></div>
+    //   <div className='SettingsIcon p-3'><SettingsIcon /></div>
+    // </div>
+    <div className='flex px-10 py-5 justify-between fixed top-0 left-0 w-full bg-white'>
+      <h1 className='text-black text-3xl font-bold'>Chit<span className='text-teal-500'>Chat</span> </h1>
+      <Navlogin />
     </div>
+
   );
 };
 
