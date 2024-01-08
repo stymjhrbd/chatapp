@@ -27,17 +27,18 @@ const ChatBox: React.FC = () => {
     }
   };
 
-  const handleDeleteAll = () => {
-    setMessages([]);
-  };
+  // const handleDeleteAll = () => {
+  //   setMessages([]);
+  // };
 
   return (
-    <div style={{ width: '500px', border: '1px solid #ccc', borderRadius: '8px', padding: '16px', margin: '16px auto', boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
+    <div style={{ backgroundColor: '#80CBC4', width: '500px', border: '1px solid #ccc', borderRadius: '8px', padding: '16px', margin: '16px auto', boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
       <div style={{ height: '400px', overflowY: 'auto', marginBottom: '16px', borderBottom: '1px solid #ccc' }}>
         {messages.map((message) => (
           <div key={message.id} style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginBottom: '8px' }}>
-            <div style={{ backgroundColor: '#c3e6cb', borderRadius: '8px', padding: '8px', maxWidth: '70%', wordWrap: 'break-word' }}>
+            <div style={{ backgroundColor: '#282b9e', borderRadius: '8px', padding: '8px', maxWidth: '70%', wordWrap: 'break-word' }}>
               {message.text}
+
             </div>
           </div>
         ))}
@@ -50,12 +51,12 @@ const ChatBox: React.FC = () => {
           placeholder="Type your message..."
           style={{ flex: 1, marginRight: '8px', padding: '8px', borderRadius: '4px', border: '1px solid #ccc', outline: 'none' }}
         />
-        <button onClick={handleSendMessage} style={{ padding: '8px', borderRadius: '4px', background: '#007BFF', color: '#fff', border: 'none', cursor: 'pointer', outline: 'none' }}>
+        <button onClick={handleSendMessage} style={{ padding: '8px', margin: "4px", borderRadius: '10px', background: '#007BFF', color: '#fff', border: 'none', cursor: 'pointer', outline: 'none' }}>
           Send
         </button>
-        <button onClick={handleDeleteAll} style={{ padding: '8px', borderRadius: '4px', background: '#dc3545', color: '#fff', border: 'none', cursor: 'pointer', outline: 'none' }}>
+        {/* <button onClick={handleDeleteAll} style={{ padding: '8px', margin: "4px", borderRadius: '6px', background: '#dc3545', color: '#fff', border: 'none', cursor: 'pointer', outline: 'none' }}>
           Delete All
-        </button>
+        </button> */}
       </div>
     </div>
   );
