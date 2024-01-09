@@ -32,24 +32,26 @@ const ChatBox: React.FC = () => {
   // };
 
   return (
-    <div style={{ backgroundColor: '#80CBC4', width: '500px', border: '1px solid #ccc', borderRadius: '8px', padding: '16px', margin: '16px auto', boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)' }}>
-      <div style={{ height: '400px', overflowY: 'auto', marginBottom: '16px', borderBottom: '1px solid #ccc' }}>
+    <div className="w-full flex flex-col p-3 rounded-lg border-[1px solid #ccc] bg-gradient-to-b from-teal-500 from-10% via-teal-400 via-30% to-teal-200 to-90% " >
+      <div className='h-full overflow-auto mb-3 '
+      >
         {messages.map((message) => (
           <div key={message.id} style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginBottom: '8px' }}>
-            <div style={{ backgroundColor: '#282b9e', borderRadius: '8px', padding: '8px', maxWidth: '70%', wordWrap: 'break-word' }}>
+            <div className="" style={{ backgroundColor: '#009688', borderRadius: '8px', padding: '8px', maxWidth: '70%', wordWrap: 'break-word' }}>
               {message.text}
 
             </div>
           </div>
         ))}
       </div>
-      <div style={{ display: 'flex' }}>
+      <div className="flex justify-end items-centre mb-0 pb-0">
         <input
           type="text"
           value={inputText}
           onChange={handleInputChange}
           placeholder="Type your message..."
-          style={{ flex: 1, marginRight: '8px', padding: '8px', borderRadius: '4px', border: '1px solid #ccc', outline: 'none' }}
+          className='flex w-full mr-2 p-3 border-r-amber-50 border rounded-md outline-0'
+        // style={{ flex: 1, marginRight: '8px', padding: '8px', borderRadius: '4px', border: '1px solid #ccc', outline: 'none' }}
         />
         <button onClick={handleSendMessage} style={{ padding: '8px', margin: "4px", borderRadius: '10px', background: '#007BFF', color: '#fff', border: 'none', cursor: 'pointer', outline: 'none' }}>
           Send

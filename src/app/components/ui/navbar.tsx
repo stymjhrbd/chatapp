@@ -16,16 +16,16 @@ const Navbar = () => {
     //   <div className='personIcon p-3'><PersonIcon /></div>
     //   <div className='SettingsIcon p-3'><SettingsIcon /></div>
     // </div>
-    <div className='flex px-10 py-5 justify-between fixed top-0 left-0 w-full bg-white'>
+    <div className='flex px-10 py-5 justify-between fixed top-0 left-0 w-full bg-white sticky'>
       <h1 className='text-black text-3xl font-bold'>Chit<span className='text-teal-500'>Chat</span> </h1>
-      <div>
+      {/* <div>
         <Image
-          src="/image.jpg" 
+          src="/image.jpg"
           alt="image"
           width={40}
-          height={50} 
+          height={50}
         />
-      </div>
+      </div> */}
       <Navlogin />
     </div>
 
