@@ -33,7 +33,7 @@ const ChatBox: React.FC = () => {
 
   return (
     <div className="w-full flex flex-col p-3 rounded-lg border-[1px solid #ccc] bg-gradient-to-b from-teal-500 from-10% via-teal-400 via-30% to-teal-200 to-90% " >
-      <div className='h-full overflow-auto mb-3 '
+      <div className='h-full mb-3 pt-[5rem]'
       >
         {messages.map((message) => (
           <div key={message.id} style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', marginBottom: '8px' }}>
